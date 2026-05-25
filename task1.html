@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basics of Web Development</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        /* Navy Blue Body Background */
+        
+        body {
+            background: #0f172a;
+            color: #e2e8f0;
+        }
+        /* Darker Navy Header */
+        
+        header {
+            background: #1e293b;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 1px solid #334155;
+        }
+        
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 5px;
+            color: #f8fafc;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 30px auto;
+        }
+        /* White cards to make the text highly readable against the navy background */
+        
+        .card {
+            background: #ffffff;
+            color: #333333;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        /* Navy Titles inside Cards */
+        
+        h2 {
+            color: #1e293b;
+            margin-bottom: 15px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        /* Image Element Styling */
+        
+        .web-image {
+            width: 100%;
+            max-height: 350px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin: 15px 0;
+            display: block;
+        }
+        /* Interactive Link Styling */
+        
+        .web-link {
+            color: #2563eb;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        
+        .web-link:hover {
+            color: #1d4ed8;
+        }
+        /* Navy Blue Button */
+        
+        .btn {
+            background: #1e293b;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #0f172a;
+        }
+        /* Navy Footer */
+        
+        footer {
+            text-align: center;
+            background: #1e293b;
+            color: #94a3b8;
+            padding: 15px;
+            margin-top: 40px;
+            border-top: 1px solid #334155;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Basics of Web Development</h1>
+        <p>Task 1: Learn and apply foundational HTML, CSS, and JavaScript concepts.</p>
+    </header>
+
+    <div class="container">
+
+        <div class="card">
+            <h2>Step 1: Simple Webpage Using HTML</h2>
+            <p>This section fulfills the action item to build a webpage using headings, paragraphs, live images, and absolute links.</p>
+
+            <img class="web-image" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&auto=format&fit=crop&q=60" alt="Code on a screen">
+
+            <p>Ready to explore more resources? <a class="web-link" href="https://developer.mozilla.org" target="_blank">Click here to visit MDN Web Docs</a>.</p>
+        </div>
+
+        <div class="card">
+            <h2>Step 2: Style the Webpage Using CSS</h2>
+            <p>This step is actively implemented across the entire document. Global styles apply custom navy blue colors (<code>#0f172a</code> and <code>#1e293b</code>), clean structural card layouts, padding, margins, and smooth hover state transitions.</p>
+        </div>
+
+        <div class="card">
+            <h2>Step 3: Add Basic JavaScript for Interactivity</h2>
+            <p>Click the button below to execute a lightweight JavaScript trigger function that generates a native browser alert window.</p>
+
+            <button class="btn" onclick="showAlert()">Trigger Alert Message</button>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>ApexPlanet • Task - 1 Completed</p>
+    </footer>
+
+    <script>
+        // Step 3 Actions: Function that triggers an alert message when clicked
+        function showAlert() {
+            alert("Success! Step 3 completed: The alert message was triggered successfully.");
+        }
+    </script>
+
+</body>
+
+</html>
