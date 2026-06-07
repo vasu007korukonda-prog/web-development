@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApexPlanet Task 2 - Web Dev Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="brand">
+                <span class="logo-text">ApexPlanet</span>
+                <span class="badge">Task 2</span>
+            </div>
+            <nav class="nav-menu">
+                <a href="#form-card" class="nav-link">Contact</a>
+                <a href="#todo-card" class="nav-link">Workspace</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="dashboard-wrapper">
+
+        <section id="form-card" class="card">
+            <div class="card-header">
+                <h2>Secure Contact Form</h2>
+                <p class="card-subtitle">Complete all fields below. Client-side input validation is active.</p>
+            </div>
+
+            <form id="contactForm" autocomplete="off" novalidate>
+                <div class="input-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" placeholder="Jane Doe">
+                    <span class="validation-error" id="nameError">Name field cannot be blank.</span>
+                </div>
+
+                <div class="input-group">
+                    <label for="emailAddress">Email Address</label>
+                    <input type="email" id="emailAddress" placeholder="jane@example.com">
+                    <span class="validation-error" id="emailError">Please input a valid email layout.</span>
+                </div>
+
+                <div class="input-group">
+                    <label for="messageText">Message Box</label>
+                    <textarea id="messageText" rows="4" placeholder="Type your inquiry here..."></textarea>
+                    <span class="validation-error" id="messageError">Message area cannot be left empty.</span>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit Form Details</button>
+            </form>
+        </section>
+
+        <section id="todo-card" class="card">
+            <div class="card-header">
+                <h2>Live Task Workspace</h2>
+                <p class="card-subtitle">Manage runtime assignments. Dynamic updates interact directly with the DOM layer.</p>
+            </div>
+
+            <img src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?q=80&w=800&auto=format&fit=crop" alt="Modern development IDE showing active source code text" class="workspace-hero-img">
+
+            <div class="todo-interface">
+                <div class="input-inline">
+                    <input type="text" id="todoInput" placeholder="Add a new assignment...">
+                    <button id="addTodoBtn" class="btn btn-success">Add Task</button>
+                </div>
+
+                <ul class="todo-stream" id="todoStream">
+                    <li class="todo-node">
+                        <span class="node-text">Review structural Flexbox and Grid code layouts</span>
+                        <button class="btn-delete" aria-label="Remove item">&times;</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
